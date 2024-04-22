@@ -1,0 +1,16 @@
+[package]
+name = "file_reader_lambda"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-config = "1.2.1"
+aws-sdk-s3 = "1.24.0"
+tokio = { version = "1", features = ["full"] }
+lambda_runtime = "0.6.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+log = "0.4"
+simple_logger = "1.16.0"
